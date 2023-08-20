@@ -2,6 +2,9 @@
 Teaching assistant work : answering questions from students.
 
 # 1주차 : 
+### [과제]
+<img src ="https://github.com/sliverKi/basicJS/assets/121347506/eb18aa41-79ee-4fdd-b3c9-ce556f4a3e0d" width ="450" >
+
 ### [목적] : 강의내용 복습 및 적용, html과 css복습
 ### 복습하면서 만들어본 나의 Profile-Card
 
