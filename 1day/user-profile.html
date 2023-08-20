@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <link rel="stylesheet" href="user-profile-card.css">
+    <script src="https://kit.fontawesome.com/fbcd7384b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="profile-area">
+            <div class ="inner">
+                <img src="./apeach.jpeg"/>
+            </div>
+        </div>
+        
+        <div class="icon arrow"><i class="fa-solid fa-arrow-left"></i></div>
+        <div class="icon dot"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        
+        <div class="user-info-area">
+        <h1 id="user-name"></h1>
+        <p id ="who"></p>
+        <p id ="strong"></p>
+        </div>
+        
+        <div class="social-area">
+        <div class="github"><i class="fa-brands fa-github fa-2x"></i></div>
+        <div class="velog"><i class="fa-solid fa-blog fa-2x"></i></div>   
+        <div class="mail"><i class="fa-solid fa-at fa-2x"></i></div>
+        <div class="phone"><i class="fa-solid fa-phone fa-2x"></i></div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("h1").textContent=`${prompt("당신의 이름은?")}`
+        document.querySelector("#who").textContent=`${prompt("어떤 직무를 희망하나요?")}`
+        document.querySelector("#strong").textContent=`${prompt("당신의 강점은?")}`
+    </script> 
+</body>
+</html>
