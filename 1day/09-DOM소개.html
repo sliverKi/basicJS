@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 소개 & 콘텐츠 변경하기</title>
+</head>
+<body>
+    <p>대한민국의 역습입니다!</p>
+    <p class="comment">손흥민이 몰고 갑니다. 크로스~</p>
+    <p class="comment" id="goal">조규성의 환상적인 마무리~!!</p>
+
+    <script>
+        //입력->처리->출력
+        const firstP=document.querySelector("p")
+        console.log(firstP.textContent)
+        firstP.textContent="다시 우루과이의 역습입니다!!"
+        console.log(firstP.textContent)
+    </script>
+</body>
+</html>
