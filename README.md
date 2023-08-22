@@ -16,7 +16,6 @@ Teaching assistant work : answering questions from students.
   <img src="https://github.com/sliverKi/basicJS/assets/121347506/6d7ce34d-e41e-4108-bffc-b4a35cb17697" width="600">
 </p>
 
-
 ---
 # 2주차 : 
 ### [목적] : MonsterHP가 음수인 경우 남은 HP를 출력하지 않고 강제 종료함. 
@@ -25,3 +24,5 @@ Teaching assistant work : answering questions from students.
 ---
 실행영상<br>
 <p>  
+  <img src="https://github.com/sliverKi/basicJS/assets/121347506/2bf51b09-58e0-497e-8373-62b0c0676fc2" width="600">
+<p>
