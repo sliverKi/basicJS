@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElement & appendChild</title>
+</head>
+<body>
+    <div id="container">
+        
+    </div>
+    <script>
+       const div = document.getElementById("container")
+
+       const box = document.createElement("div")
+       console.log(box)
+       box.style.color="orange"
+       box.style.width="200px"
+       box.style.height="200px"
+       box.textContent="헷갈리지만 신기하고 재밌다."
+       box.style.backgroundColor="green"
+       box.style.borderRadius="50%"
+       div.appendChild(box)
+
+
+       for(let a=1;a<5;a+=1){
+            const div=document.getElementById("container")
+            const wrapper=document.createElement("div")
+            wrapper.style.color="red"
+            wrapper.style.width="200px"
+            wrapper.style.height="200px"
+            wrapper.style.textContent="Wrapper"
+            wrapper.style.textAlign="center"
+            wrapper.style.backgroundColor="orange"
+            wrapper.style.borderRadius="50%"
+            div.appendChild(wrapper)
+
+       }
+
+       // append("단순 텍스트 문자열도 추가 가능", 반환값이 없음(=undefined))
+       // appendChild(html tag만 추가 가능)
+    </script>
+    
+</body>
+</html>
