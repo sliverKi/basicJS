@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <script>
+        //배열(= built in 생성자) 생성 방법
+        
+        // 1.리터럴로 생성
+        //const arr = [1,2,3]
+        
+        // 2.Array 생성자로 생성
+        //const arr = new Array(1,2,3,4)
+
+        const asepa = ["karina", "winter", "nimgning", "giselle"]
+        console.log(asepa)
+        //배열에 주어진 요소 추가
+        asepa.push("sm")
+        console.log(asepa)
+        
+        //배열의 끝 부분부터 요소 삭제
+        asepa.pop()
+        console.log(asepa)
+
+        //indexOf("?"):배열안에 ?인 요소의 인덱스 번호 출력, 없으면 -1출력
+        console.log(asepa.indexOf("karina"))
+        console.log(asepa.indexOf("카리나"))
+        
+        //splice: 정해진 위치에서 부터 정해진 개수 만큼 요소 제거
+        asepa.splice(0, 3)
+        console.log(asepa)
+
+        //splice: 로 요소를 지운다음, 대체 값을 채우는 것도 가능하다.
+        asepa.splice(0, 3, "카리나", "윈터", "닝닝")
+        console.log(asepa)
+        //배열의 개별 요소를 차례대로 출력한다.
+        asepa.forEach(function(asepa){
+            console.log(asepa)
+        })
+    </script>
+</body>
+</html>
