@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빌트인 생성자</title>
+</head>
+<body>
+
+    <p id ="now"></p>
+    <script>
+        //빌트인 생성자: JS에 내장된 생성자 ex) Date
+        //빌트인 객체 : JS에 내장된 객체 
+        const p = document.getElementById("now")
+        const now = new Date()
+        const then = new Date(2023, 9, 23, 11, 30, 30)//월은 0부터 시작한다. 9-> 8월을 의미 
+
+        console.log(now)
+        console.log(then)
+
+        let year = now.getFullYear()
+        let month = now.getMonth()+1
+        let day = now.getDate()
+        let hour = now.getHours()
+        let min = now.getMinutes()
+        let sec = now.getSeconds()
+
+        p.textContent=`${year}/${month}/${day}, ${hour}:${min}:${sec}`
+        
+        //날짜와 시간을 다룰 수 있는 속성과 메서드
+        /*
+        getFullYear : 연도를 뜻하는 숫자 값 반환
+        getMonth : 월을 뜻하는 숫자 값 반환
+        getDate : 날짜를 뜻하는 숫자 값 반환
+        getDay : 요일을 뜻하는 숫자 값 반환
+        getHours : 시각중 시간을 나타내는 숫자 반환
+        getMinutes : 시각중 분을 나타내는 숫자 반환
+        getSexonds : 시각중 초를 나타내는 숫자 반환
+        toLocalwString : 지역낳짜 및 시간 문자열 반환
+        */
+    </script>
+</body>
+</html>
