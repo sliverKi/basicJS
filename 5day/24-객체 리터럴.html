@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 리터럴</title>
+</head>
+<body>
+    <script>
+        // 객체 리터럴은 생성자와 비슷하다 
+        // 생성자 : 객체를 설계한 함수 
+        // 객체 리터럴 : 객체를 이렇게 만들겠다고 선언 ~> 객체를 만들기 위해 사용하는 문법
+
+        const cat = {
+            species: "포유류",
+            title: "고양이" 
+        }
+        console.log(cat.species)
+        console.log(cat["title"])
+
+        // ... : 스프레드 : 대괄호를 벗개내고 그 안의 내용만 반환함.
+
+        const gookhee = {
+            ...cat, 
+            name: "국희",
+            age: 4,
+            favorite: ["끈", "과일", "사료"]
+        }
+        console.log(...gookhee.favorite)
+
+    </script>
+</body>
+</html>
